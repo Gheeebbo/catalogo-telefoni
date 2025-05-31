@@ -14,30 +14,32 @@
       text-align: center;
     }
     .brand {
-      margin-top: 30px;
+      margin-top: 40px;
     }
-    .brand h2 {
-      background-color: #222;
-      color: white;
-      padding: 10px;
-      border-radius: 8px;
+    .brand-logo {
+      max-width: 180px;
+      display: block;
+      margin: 0 auto 20px;
     }
     .models {
       display: flex;
       flex-wrap: wrap;
       gap: 15px;
-      margin-top: 10px;
+      justify-content: center;
     }
     .model {
       background-color: white;
       border: 1px solid #ccc;
-      border-radius: 8px;
+      border-radius: 10px;
       padding: 20px;
       text-align: center;
-      flex: 1 0 150px;
-      min-width: 150px;
-      max-width: 200px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 200px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .model:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     .model a {
       text-decoration: none;
@@ -53,26 +55,29 @@
   <h1>Catalogo Telefoni</h1>
 
   <div class="brand">
-    <h2>Xiaomi</h2>
+    <img src="images/xiaomi.png" alt="Xiaomi" class="brand-logo">
     <div class="models">
-      <div class="model">
-        <a href="https://www.mi.com/global/product/redmi-note-13-pro/" target="_blank">Redmi Note 13 Pro</a>
-      </div>
-      <div class="model">
-        <a href="https://www.mi.com/global/product/redmi-13c/" target="_blank">Redmi 13C</a>
-      </div>
+      <div class="model"><a href="https://www.mi.com/global/product/redmi-note-13-pro/" target="_blank">Redmi Note 13 Pro</a></div>
+      <div class="model"><a href="https://www.mi.com/global/product/redmi-13c/" target="_blank">Redmi 13C</a></div>
+      <div class="model"><a href="https://www.mi.com/global/product/redmi-note-12-pro-5g/" target="_blank">Redmi Note 12 Pro 5G</a></div>
     </div>
   </div>
 
   <div class="brand">
-    <h2>Samsung</h2>
+    <img src="images/samsung.png" alt="Samsung" class="brand-logo">
     <div class="models">
-      <div class="model">
-        <a href="https://www.samsung.com/it/smartphones/galaxy-s24-ultra/" target="_blank">Galaxy S24 Ultra</a>
-      </div>
-      <div class="model">
-        <a href="https://www.samsung.com/it/smartphones/galaxy-a54-5g/" target="_blank">Galaxy A54 5G</a>
-      </div>
+      <div class="model"><a href="https://www.samsung.com/it/smartphones/galaxy-s24-ultra/" target="_blank">Galaxy S24 Ultra</a></div>
+      <div class="model"><a href="https://www.samsung.com/it/smartphones/galaxy-a54-5g/" target="_blank">Galaxy A54 5G</a></div>
+      <div class="model"><a href="https://www.samsung.com/it/smartphones/galaxy-z-flip5/" target="_blank">Galaxy Z Flip5</a></div>
+    </div>
+  </div>
+
+  <div class="brand">
+    <img src="images/oppo.png" alt="Oppo" class="brand-logo">
+    <div class="models">
+      <div class="model"><a href="https://www.oppo.com/it/smartphones/series-a/a98-5g/" target="_blank">Oppo A98 5G</a></div>
+      <div class="model"><a href="https://www.oppo.com/it/smartphones/series-find-x/find-x5-pro/" target="_blank">Oppo Find X5 Pro</a></div>
+      <div class="model"><a href="https://www.oppo.com/it/smartphones/series-reno/reno10-5g/" target="_blank">Oppo Reno10 5G</a></div>
     </div>
   </div>
 
